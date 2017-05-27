@@ -266,8 +266,8 @@ plot.Markowitz <- function(object, plot.assets=FALSE, ...)
     y.lim = range(c(0,mu.vals,object$er))
     x.lim = range(c(0,sd.vals,object$sd))
     plot(object$sd,object$er,type="b", xlim=x.lim, ylim=y.lim,
-         xlab="Portfolio SD", ylab="Portfolio ER",
-         main="Efficient Frontier", ...)
+         xlab="Desviación Estandar", ylab="Retorno Esperado",
+         main="Frontera Eficiente", ...)
     text(sd.vals, mu.vals, labels=names(mu.vals))
   }
   invisible()
